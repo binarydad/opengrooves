@@ -24,8 +24,10 @@ namespace OpenGrooves.Web.Services
                     IsBodyHtml = true
                 };
 
-            var client = new SmtpClient();
-            client.Send(msg);
+            using(var client = new SmtpClient())
+            {
+                client.Send(msg);
+            }
         }
     }
 }
