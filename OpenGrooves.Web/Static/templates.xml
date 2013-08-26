@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+    <template name="Master">
+        <html>
+            <![CDATA[
+                <html>
+                    <body>
+                    <style type="text/css">
+                        body { font-family:verdana; font-size:11px; }
+                        a { font-weight:bold; }
+                        h1 { font-size:16px; color:#444444; font-weight:bold; }
+                        img.logo { display:block; margin-bottom:22px; }
+                        img { border:0; }
+                        div.sig { margin-top:20px; border-top:1px solid #eeeeee; padding-top:20px; font-style:italic; }
+                        div.menu { float:right; }
+                    </style>
+                    
+                    <div class="menu">
+                        <a href="http://preview.opengrooves.com">OpenGrooves.com</a> | 
+                        <a href="http://preview.opengrooves.com/browse">Find Bands</a> | 
+                        <a href="http://preview.opengrooves.com/browse/events">Local Shows</a>
+                    </div>
+                    
+                    <a href="http://preview.opengrooves.com"><img src="http://preview.opengrooves.com/content/images/logo_2.png" class="logo" /></a>
+                    
+                    [[BODY]]
+                    
+                    <i style="color:#888888">
+                        You are receiving this message because you have opted in to receive 
+                        alerts for certain events. This and other settings may be disabled in your account settings. 
+                        <strong>Remember,</strong> your email information is always kept private with us and you are never added to any email lists without your consent. 
+                    </i>
+                    
+                    <div class="sig">
+                        Sincerely,<br />
+                        The OpenGrooves Team<br /><br />
+                        Questions? Feedback? Please <a href="mailto:support@opengrooves.com">contact us</a>
+                    </div>
+                    </body>
+                </html>
+            ]]>
+        </html>
+    </template>
+    <template name="Welcome">
+        <subject>Welcome to OpenGrooves!</subject>
+        <html>
+        <![CDATA[
+            <h1>Welcome to OpenGrooves!</h1>
+            <p>
+                Thank you [[USERNAME]] for registering your account! We greatly appreciate the support of new members in order to help OpenGrooves grow. 
+                <br /><br />
+                HOW TO GET STARTED:<br/><br/>
+                1. Connect to bands in your area<br />
+                2. Receive updates to new shows and events<br />
+                3. That's it!<br/><br/>
+                Once again, we truly appreciate your support. If you like what you see, spread the word! The more, the merrier!
+            </p>
+        ]]>
+        </html>
+    </template>
+    <template name="BetaTestWelcome">
+        <subject>Welcome to the OpenGrooves pre-launch!</subject>
+        <html>
+            <![CDATA[
+            <h1>Welcome to OpenGrooves!</h1>
+            <p>
+                Thank you, <b>[[USERNAME]]</b>, for registering your account! We greatly appreciate the support of new members in order to help OpenGrooves grow. 
+                <br /><br />
+                In case you lose it, your password is: <b>[[PASSWORD]]</b>
+                <br /><br />
+                <b>As you may or may not know...</b>
+                <br /><br />
+                You are part of a group of very, VERY early adopters. The site itself is still in an open beta. With that said, you may come across bugs that not yet been discovered. 
+                <b>OpenGrooves is a home-grown, Baltimore-based effort by two local musicians.</b> We are not a company looking to extort or sell your information. We truly want to 
+                create an easy-to-use platform for discovering local bands and events in your area. 
+                <br /><br />
+                Again, we truly appreciate your support. Thank you. If you like what you see, spread the word! The more, the merrier!
+            </p>
+        ]]>
+        </html>
+    </template>
+    <template name="Activate">
+        <subject>Activate your OpenGrooves account</subject>
+        <html>
+        <![CDATA[
+            <h1>Greetings, [[USERNAME]],</h1>    
+            <p>
+                You recently registered for an account with OpenGrooves.com. Please  
+                take a moment to confirm your e-mail address by clicking on the link  
+                below:
+                <br /><br />
+                <a href="[[LINK]]">Activate my account</a>
+                <br /><br />
+                OR: [[LINK]]
+                <br /><br />
+                If the link is not active, please copy and past the link into your web  
+                browser. Once we've verified your e-mail address, you can continue to  
+                set up your profile and start connecting with other bands! Thanks for  
+                joining!
+            </p>
+        ]]>            
+        </html>
+    </template>
+    <template name="NotifyNewMessage">
+        <subject>You received a message on OpenGrooves</subject>
+        <html>
+        <![CDATA[
+            <h1>New message alert</h1>
+            <p>
+                The user, <b>[[FROM]]</b>, has sent you a message on OpenGrooves. 
+                <br /><br />
+                "[[MESSAGE]]"
+            </p>
+        ]]>            
+        </html>
+    </template>
+    <template name="NotifyBandProfileUpdate">
+        <subject>Band alert from OpenGrooves</subject>
+        <html>
+        <![CDATA[
+            <h1>[[BAND]] profile update</h1>
+            <p>
+                <b>[[BAND]]</b> has updated their band profile. <a href="http://preview.opengrooves.com/[[LINK]]">View Profile</a>.
+            </p>
+        ]]>
+        </html>
+    </template>
+    <template name="NotifyEventUpdated">
+        <subject>Event alert from OpenGrooves</subject>
+        <html>
+            <![CDATA[
+            <h1>Event update</h1>
+            <p>
+                The event, <b>[[EVENT]]</b> has been recently updated. You are receiving this because the following bands that you are connected to are playing at this event:
+                <br /><br />
+                <b>[[BANDS]]</b>
+                <br /><br />
+                More information: <a href="http://preview.opengrooves.com/event/[[LINK]]">[[EVENT]]</a>.
+            </p>
+        ]]>
+        </html>
+    </template>
+    <template name="NotifyEventBandsAdded">
+        <subject>Event alert from OpenGrooves</subject>
+        <html>
+            <![CDATA[
+            <h1>New event added for [[BANDS]]</h1>
+            <p>
+                The following bands have been added to the event [[EVENT]]:
+                <br /><br />
+                <b>[[BANDS]]</b>
+                <br /><br />
+                <a href="http://preview.opengrooves.com/event/[[LINK]]">View event information</a>.
+            </p>
+        ]]>
+        </html>
+    </template>
+    <template name="NotifyBandPhotos">
+        <subject>Band alert from OpenGrooves</subject>
+        <html>
+            <![CDATA[
+            <h1>New alert for [[BAND]]</h1>
+            <p>
+                The band, <b>[[BAND]]</b> has added new photos.
+                <br /><br />
+                <a href="http://preview.opengrooves.com/[[LINK]]">Check them out!</a>
+            </p>
+        ]]>
+        </html>
+    </template>
+</templates>

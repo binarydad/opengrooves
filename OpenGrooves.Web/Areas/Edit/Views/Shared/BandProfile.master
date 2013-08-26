@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Areas/Edit/Views/Shared/Admin.Master" AutoEventWireup="true" CodeBehind="BandProfile.master.cs" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+<asp:ContentPlaceHolder runat="server" ID="TitleContent" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="HeadContent" runat="server">
+<asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+
+    <% var bandId = ViewData["bandId"] as string; %>
+
+    <span class="list-actions"><%: Html.RouteLink("View Band Profile", "band", new { action = "profile", name = bandId }) %></span>
+    <h1>Edit Band</h1>
+
+    <div class="band-profile-nav">
+        <%: Html.RouteLink("Profile", "mybands", new { action = "edit", bandId = bandId })%>
+        <%: Html.RouteLink("Announcements", "mybands", new { action = "announcements", bandId = bandId })%>
+        <%: Html.RouteLink("Images", "mybands", new { action = "images", bandId = bandId }) %>
+        <%: Html.RouteLink("Audio", "mybands", new { action = "audio", bandId = bandId }) %>
+        <%: Html.RouteLink("Videos", "mybands", new { action = "videos", bandId = bandId }) %>
+        <%: Html.RouteLink("Events", "mybands", new { action = "events", bandId = bandId }) %>
+        <%: Html.RouteLink("Members", "mybands", new { action = "members", bandId = bandId }) %>
+        <div class="clear"></div>
+    </div>
+
+    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+
+</asp:Content>

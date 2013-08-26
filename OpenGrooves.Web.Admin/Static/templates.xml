@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+    <template name="Master">
+        <html>
+            <![CDATA[
+                <html>
+                    <body>
+                    <style type="text/css">
+                        body { font-family:verdana; font-size:11px; }
+                        a { font-weight:bold; }
+                        h1 { font-size:16px; color:#444444; font-weight:bold; }
+                        img.logo { display:block; margin-bottom:22px; }
+                        img { border:0; }
+                        div.sig { margin-top:20px; border-top:1px solid #eeeeee; padding-top:20px; font-style:italic; }
+                        div.menu { float:right; }
+                    </style>
+                    
+                    <div class="menu">
+                        <a href="http://preview.opengrooves.com">OpenGrooves.com</a> | 
+                        <a href="http://preview.opengrooves.com/browse">Find Bands</a> | 
+                        <a href="http://preview.opengrooves.com/browse/events">Local Shows</a>
+                    </div>
+                    
+                    <a href="http://preview.opengrooves.com"><img src="http://preview.opengrooves.com/content/images/logo_2.png" class="logo" /></a>
+                    
+                    [[BODY]]
+                    
+                    <div class="sig">
+                        Sincerely,<br />
+                        The OpenGrooves Team<br /><br />
+                        Questions? Feedback? Please <a href="mailto:support@opengrooves.com">contact us</a>
+                    </div>
+                    </body>
+                </html>
+            ]]>
+        </html>
+    </template>
+    <template name="BetaTestActivate">
+        <subject>Activate your OpenGrooves account!</subject>
+        <html>
+        <![CDATA[
+            <h1>A while ago, you signed up for an OpenGrooves account...</h1>
+            
+            <p>
+                The Baltimore-based music project is now ready to invite a couple early-adopters to get a little more familiar with OpenGrooves
+                and, hopefully with your help, provide some feedback in order to improve the site for our users. 
+            </p>
+            
+            <p>
+                <a href="[[ACTIVATION]]">Click here to activate your account</a>
+                <br /><br />
+                OR, if the link above does not display, copy and paste the following URL into your web browser:
+                <br />
+                <b>[[ACTIVATION]]</b>
+            </p>
+            
+            <p>
+                <b>So what's next?</b> You may notice that it is a little quiet once you're on the site. You're one of a handful of people chosen to be
+                part of the OpenGrooves pre-launch. We hope that you stick around and check back once in a while. The project can only grow with YOUR support. 
+            </p>
+        ]]>
+        </html>
+    </template>
+</templates>

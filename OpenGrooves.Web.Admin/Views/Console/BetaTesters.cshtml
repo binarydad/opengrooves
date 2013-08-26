@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Email";
+}
+@using OpenGrooves.Core.Extensions
+@model OpenGrooves.Web.Admin.Models.ConsoleModel
+
+<h2>Beta Users</h2>
+
+@Model.BetaUsers.Count() beta users inactive
+<br /><br />
+
+@foreach (var u in Model.BetaUsers)
+{ 
+    @u.Username <text>(</text>@u.Email<text>,</text> @u.Name<text>) -</text>
+    <a target="_blank" href="@u.ActivationUrl">Activation URL</a> 
+    <a onclick="return confirm('Sure?')" href="/sendbetaactivation/@u.UserId">Send Activation</a>
+    <br />
+}

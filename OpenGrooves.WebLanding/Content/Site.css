@@ -1,0 +1,281 @@
+body
+{
+    padding:20px 0;
+    font-size: 11px;
+    font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+    /*background:#f6dcce url(images/gradient.gif) left top repeat-x;*/
+    background:white url(images/background.gif) center bottom no-repeat;
+    background-attachment:fixed;
+}
+
+a
+{
+    font-weight:bold;
+    color:#cd6928;
+    text-decoration:none;
+}
+
+a:hover
+{
+    text-decoration:underline;
+}
+
+h1
+{
+    margin:0;
+    font-size:22px;
+    color:Black;
+}
+
+h2
+{
+    font-size:20px;
+    margin: 17px 0 7px;
+}
+
+img 
+{
+    border:0;
+}
+
+ul, li
+{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+ul.list, ul.list li
+{
+    list-style-type:circle;
+}
+
+ul.list li
+{
+    margin:3px 0 3px 16px;
+}
+
+/* Signup */
+
+#logo
+{
+    display:block;
+}
+
+#shell
+{
+    margin:0 auto;
+    width:900px;
+}
+
+#social
+{
+    float:right;
+}
+
+div.intro
+{
+    color:#3e2c23;
+    line-height:20px;
+    font-size:13px;
+}
+
+p.side-info
+{
+    line-height:17px;
+}
+
+#user-info
+{
+    line-height:16px;
+}
+
+form div.field
+{
+    clear:both;
+    margin-bottom:10px;
+}
+
+form div.field label
+{
+    display:block;
+    text-align:left; 
+    font-weight:bold;
+    margin-bottom:4px;
+}
+
+form div.field label.required:after
+{
+    content: " *";
+}
+
+form div.form-buttons
+{
+    clear:both;
+    
+    margin-top:25px;
+    text-align:right;
+}
+
+form div.field input, form div.field select
+{
+    font-family:Arial;
+    font-size:14px;
+    padding:5px;
+}
+
+form div.field input
+{
+    width:240px;
+    border:1px solid black;
+}
+
+form div.field select
+{
+    width:150px;
+    cursor:pointer;
+    border:1px solid black;
+}
+
+form div.form-buttons input[type=submit]
+{
+    border:0; 
+    padding:7px;
+    font-weight:bold;
+    font-size:18px;
+    font-family:Arial;
+    background-color:#ceffb9;
+    color:#009900;
+    cursor:pointer;
+}
+
+form div.form-buttons input[type=submit]:hover
+{
+    background-color:#009900;
+    color:White;
+}
+
+div.col
+{
+    float:left;
+    padding-top:25px;
+}
+
+div.col.left
+{
+    width:600px;
+}
+
+div.col.right
+{
+    background-color: #CD6928;
+    color: white;
+    padding: 20px;
+    width: 260px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#screenshots li
+{
+    float:left;
+    line-height:normal;
+    font-size:11px;
+    color:Black;
+    text-align:center;
+    font-weight:bold;
+}
+
+#screenshots li a
+{
+    display:block;
+}
+
+#screenshots li img
+{
+    border:3px solid #cd6928;
+    margin: 13px 5px 2px;
+}
+
+#fancybox-content p 
+{
+    line-height:20px;
+    font-size:13px;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ffffff;
+    padding:3px;
+    width:246px;
+    font-weight:bold;
+    margin-top:4px;
+    display:block;
+    background-color:#dd0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ffffff;
+    margin-top:10px;
+    background-color:#dd0000;
+    padding:3px 3px 5px 3px;
+}
+
+.validation-summary-errors ul li
+{
+    list-style-type:circle;
+    margin:4px 0 0 14px;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}

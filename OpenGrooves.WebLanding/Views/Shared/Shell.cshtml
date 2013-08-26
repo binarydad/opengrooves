@@ -1,0 +1,41 @@
+﻿@using OpenGrooves.Core.Extensions
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenGrooves - Find local events, local bands, and connect to musicians in your area!</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.2.min.js" type="text/javascript"></script>
+    @Html.ScriptInclude("~/scripts/common.js")
+    @Html.Partial("FancyBox")
+    @Html.ScriptInclude("~/scripts/cufon/cufon-yui.js")
+    @Html.ScriptInclude("~/scripts/cufon/Bebas_400.font.js")
+    <script type="text/javascript">
+        $(function () {
+            Cufon.replace('h1, h2');
+        });
+    </script>
+</head>
+    <body>
+    
+        <div id="shell">
+
+            <div id="social">
+                <a href="http://twitter.com/opengrooves" target="_blank"><img alt="OpenGrooves on Twitter" title="Follow us on Twitter!" src="/content/images/icons/twitter_32.png" /></a>
+                <a href="http://www.facebook.com/pages/OpenGrooves/115038468574459" target="_blank"><img alt="OpenGrooves on Facebook" title="Follow us on Facebook!" src="/content/images/icons/facebook_32.png" /></a>
+                <a href="http://blog.opengrooves.com" target="_blank"><img alt="OpenGrooves development blog" title="Follow our development blog!" src="/content/images/icons/wordpress_32.png" /></a>
+            </div>
+    
+            <a href="/"><img src="/content/images/logo.png" id="logo" alt="OpenGrooves" /></a>
+
+            @RenderBody()
+
+            <div style="clear:both;"></div>
+
+            <small>Have a question? Found a bug? <a href="mailto:questions@opengrooves.com">Send us a comment.</a></small>
+        </div>
+        <script type="text/javascript">Cufon.now();</script>
+        
+        @Html.Partial("CommonFooter")
+    </body>
+</html>
+

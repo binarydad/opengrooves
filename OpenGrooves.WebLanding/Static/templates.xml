@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+    <template name="Master">
+        <html>
+            <![CDATA[
+                <html>
+                    <body>
+                    <style type="text/css">
+                        body { font-family:verdana; font-size:11px; }
+                        a { font-weight:bold; }
+                        h1 { font-size:16px; color:#444444; font-weight:normal; }
+                        img.logo { display:block; margin-bottom:22px; }
+                        img { border:0; }
+                        div.sig { margin-top:20px; border-top:1px solid #eeeeee; padding-top:20px; font-style:italic; }
+                        div.menu { float:right; }
+                    </style>
+                    
+                    <div class="menu">
+                        <a href="http://opengrooves.com">OpenGrooves.com</a> | 
+                        <a href="http://opengrooves.com/browse">Find Bands</a> | 
+                        <a href="http://opengrooves.com/home/events">Local Shows</a>
+                    </div>
+                    
+                    <a href="http://opengrooves.com"><img src="http://preview.opengrooves.com/content/images/logo_2.png" class="logo" /></a>
+                    
+                    [[BODY]]
+                    
+                    <i>
+                        You are receiving this message because you have opted in to receive 
+                        alerts for certain events. This and other settings may be disabled in your account settings. 
+                    </i>
+                    
+                    <div class="sig">
+                        Sincerely,<br />
+                        The OpenGrooves Team
+                    </div>
+                    </body>
+                </html>
+            ]]>
+        </html>
+    </template>
+    <template name="WelcomeSignup">
+        <subject>Welcome to OpenGrooves!</subject>
+        <html>
+        <![CDATA[
+            <h1>Thanks for registering</h1>
+            <p>
+                
+            </p>
+        ]]>
+        </html>
+    </template>
+</templates>

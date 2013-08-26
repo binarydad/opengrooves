@@ -1,0 +1,32 @@
+﻿@using OpenGrooves.Core.Extensions
+
+@Html.ScriptInclude("~/content/fancybox/jquery.fancybox-1.3.4.pack.js")
+@Html.ScriptInclude("~/content/fancybox/jquery.easing-1.3.pack.js")
+@Html.CssInclude("~/content/fancybox/jquery.fancybox-1.3.4.css")
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $("a.fancy").fancybox();
+
+        $('a.ajax').fancybox({
+            width: 500,
+            padding: 15,
+            autoDimensions: false,
+            onComplete: function () {
+                $.fancybox.resize();
+            }
+        });
+
+        $("div.gallery a:has(img), ul.images a:has(img)").fancybox({
+            transitionIn: 'elastic',
+            transitionOut: 'elastic',
+            speedIn: 600,
+            speedOut: 200,
+            overlayShow: true,
+            enableEscapeButton: true
+        });
+    });
+
+</script>

@@ -1,0 +1,39 @@
+﻿@model OpenGrooves.WebLanding.Models.SignUpModel
+@using OpenGrooves.Core.Extensions
+
+<div class="col left intro">
+
+    <h1>Discover Local Music</h1>
+
+    <p>
+        OpenGrooves is a <strong>FREE</strong> community for connecting local bands and musicians with each other and 
+        the fans who support them. This is your one-stop-shop to stay current with updates and events 
+        in your local music scene, as well as to discover new music in your area.
+        <br /><br />
+        The project is currently under development. <a href="/about" class="ajax">Read more about the OpenGrooves project</a> or follow our blog at <a href="http://blog.opengrooves.com" target="_blank">blog.opengrooves.com</a>.
+    </p>
+
+    @Html.Partial("Slider")
+
+    <div style="clear:both;"></div>
+
+    <p>
+        <h2>What else?</h2>
+
+        <ul class="list">
+            <li>Receive alerts on new events and bands in your area.</li>
+            <li>Create and manage your own bands, events, and profiles.</li>
+            <li>Quickly send messages to bands.</li>
+            <li>Band and event photo galleries.</li>
+            <li>Videos and music from bands.</li>
+            <li><strong>Read more on our blog - <a target="_blank" href="http://blog.opengrooves.com">blog.opengrooves.com</a></strong></li>
+            <li><strong>Sign up to reserve your account!</strong></li>
+        </ul>
+    </p>
+
+</div>
+<div class="col right">
+    @Html.Partial("Form", Model)
+</div>
+
+        

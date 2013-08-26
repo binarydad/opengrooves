@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20623.1 VSUPREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F67856A-A85D-47C0-80BD-6A166ABE6F49}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		OpenGrooves1.vsmdi = OpenGrooves1.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Projects", "Test Projects", "{CBF2D3A7-FDF3-4C60-AE23-0F26465EF210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.Data", "OpenGrooves.Data\OpenGrooves.Data.csproj", "{9C5D0444-76C9-4167-8F04-F285253E89CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.Web", "OpenGrooves.Web\OpenGrooves.Web.csproj", "{AE11D836-9A34-4CAE-927F-80009914EF70}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84B65BE9-DA47-45B4-97DC-FE9C8E657DBC} = {84B65BE9-DA47-45B4-97DC-FE9C8E657DBC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.Core", "OpenGrooves.Core\OpenGrooves.Core.csproj", "{16CBB0A3-2FB6-4CA3-AD69-DB43F91DE975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.Tests", "OpenGrooves.Tests\OpenGrooves.Tests.csproj", "{F15A4B11-E45E-423E-A4C5-719C55D43F12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.Services", "OpenGrooves.Services\OpenGrooves.Services.csproj", "{9DB84B29-F13A-4FEB-80E6-BFD5CA6FEE1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84B65BE9-DA47-45B4-97DC-FE9C8E657DBC} = {84B65BE9-DA47-45B4-97DC-FE9C8E657DBC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.WebLanding", "OpenGrooves.WebLanding\OpenGrooves.WebLanding.csproj", "{523EFC9B-E7BB-4E9A-A1FB-04172B9B9A77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.Web.Admin", "OpenGrooves.Web.Admin\OpenGrooves.Web.Admin.csproj", "{2AC29564-E40C-428B-BE00-5E197F4A4505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.Web.DynamicData", "OpenGrooves.Web.DynamicData\OpenGrooves.Web.DynamicData.csproj", "{93679730-1980-43C6-B429-6CFCD363E5D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGrooves.Web.Services", "OpenGrooves.Web.Services\OpenGrooves.Web.Services.csproj", "{84B65BE9-DA47-45B4-97DC-FE9C8E657DBC}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = OpenGrooves1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C5D0444-76C9-4167-8F04-F285253E89CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5D0444-76C9-4167-8F04-F285253E89CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5D0444-76C9-4167-8F04-F285253E89CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5D0444-76C9-4167-8F04-F285253E89CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE11D836-9A34-4CAE-927F-80009914EF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE11D836-9A34-4CAE-927F-80009914EF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE11D836-9A34-4CAE-927F-80009914EF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE11D836-9A34-4CAE-927F-80009914EF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CBB0A3-2FB6-4CA3-AD69-DB43F91DE975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CBB0A3-2FB6-4CA3-AD69-DB43F91DE975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CBB0A3-2FB6-4CA3-AD69-DB43F91DE975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CBB0A3-2FB6-4CA3-AD69-DB43F91DE975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15A4B11-E45E-423E-A4C5-719C55D43F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15A4B11-E45E-423E-A4C5-719C55D43F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15A4B11-E45E-423E-A4C5-719C55D43F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15A4B11-E45E-423E-A4C5-719C55D43F12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB84B29-F13A-4FEB-80E6-BFD5CA6FEE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB84B29-F13A-4FEB-80E6-BFD5CA6FEE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB84B29-F13A-4FEB-80E6-BFD5CA6FEE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB84B29-F13A-4FEB-80E6-BFD5CA6FEE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523EFC9B-E7BB-4E9A-A1FB-04172B9B9A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523EFC9B-E7BB-4E9A-A1FB-04172B9B9A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523EFC9B-E7BB-4E9A-A1FB-04172B9B9A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523EFC9B-E7BB-4E9A-A1FB-04172B9B9A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC29564-E40C-428B-BE00-5E197F4A4505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC29564-E40C-428B-BE00-5E197F4A4505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC29564-E40C-428B-BE00-5E197F4A4505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC29564-E40C-428B-BE00-5E197F4A4505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93679730-1980-43C6-B429-6CFCD363E5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93679730-1980-43C6-B429-6CFCD363E5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93679730-1980-43C6-B429-6CFCD363E5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93679730-1980-43C6-B429-6CFCD363E5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B65BE9-DA47-45B4-97DC-FE9C8E657DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B65BE9-DA47-45B4-97DC-FE9C8E657DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B65BE9-DA47-45B4-97DC-FE9C8E657DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B65BE9-DA47-45B4-97DC-FE9C8E657DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F15A4B11-E45E-423E-A4C5-719C55D43F12} = {CBF2D3A7-FDF3-4C60-AE23-0F26465EF210}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿@model OpenGrooves.WebLanding.Models.SignUpModel
+@using OpenGrooves.Core.Extensions;
+
+<h1 style="color:#ffffff">Create your account...</h1>
+
+@Html.ValidationSummary()
+@using (Html.BeginForm())
+{ 
+    <div id="user-info">
+
+        <p>
+            While we're completing development, we're inviting users to reserve their account and band profiles at this time.
+            <br /><br />
+            <strong>Your email address is all that we need.</strong> We will contact you when we go live!
+        </p>
+
+        @Html.FormFieldFor(m => m.Email)
+        @Html.FormFieldFor(m => m.RealName)
+        @Html.FormFieldFor(m => m.City)
+        @Html.FormFieldFor(m => m.State)
+    </div>
+
+    <h2>In A Band?</h2>
+    <p class="side-info">Reserve your band's profile: <em>opengrooves.com/<strong>your-band-name</strong></em></p>
+    
+    <div id="band-info">
+        @Html.FormFieldFor(m => m.BandName)
+    </div>
+    
+    <small>
+        Your privacy is important. We wouldn't want our email information given to 3rd parties, and we're sure you don't either. 
+        We keep your information private and will only contact you if you want us to. Your email address will NOT be added to any mailing lists.
+        <br /><br />
+        * - Indicates a required field
+    </small>
+    
+    <div class="form-buttons">
+        <input type="submit" value="Sign Me Up!" />
+    </div>
+    
+}

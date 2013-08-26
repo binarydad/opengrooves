@@ -1,0 +1,52 @@
+﻿@using OpenGrooves.Core.Extensions
+
+@Html.ScriptInclude("~/content/s3slider/s3sliderpacked.js")
+@Html.CssInclude("~/content/s3slider/s3slider.css")
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('#s3slider').s3Slider({
+            timeOut: 4000
+        });
+    });
+
+</script>
+
+<div id="s3slider">
+    <ul id="s3sliderContent">
+            
+        <li class="s3sliderImage">
+            <img src="/content/images/screenshots/intro.gif" alt="1" />
+        </li>      
+        <li class="s3sliderImage">
+            <img src="/content/images/screenshots/find_bands.jpg" alt="2" />
+            <span><strong>Find new and local bands.</strong> Discover new bands in your area. It takes one click to connect to a band and stay updated.</span>
+        </li>
+        <li class="s3sliderImage">
+            <img src="/content/images/screenshots/connections.jpg" alt="3" />
+            <span><strong>Stay connected.</strong> Follow only the bands you want and keep up-to-date with everything going on.</span>
+        </li>
+        <li class="s3sliderImage">
+            <img src="/content/images/screenshots/local_events.jpg" alt="4" />
+            <span><strong>Browse local events.</strong> Bands aren't the only new thing you'll find. All events from the bands you're connected to are automatically updated. Also, you can discover new shows and events in your area from bands you aren't connected to.</span>
+        </li>
+        <li class="s3sliderImage">
+            <img src="/content/images/screenshots/event.jpg" alt="5" />
+            <span><strong>Event information.</strong> Event pages contain detailed information, such as maps, links to bands playing, ticket information, and more.</span>
+        </li>
+        <li class="s3sliderImage">
+            <img src="/content/images/screenshots/home.jpg" alt="6" />
+            <span><strong>Always updated.</strong> Your homepage is constantly updated with new activity. When events are added, photos are posted, or bands are updated, you'll know.</span>
+        </li>
+        <li class="s3sliderImage">
+            <img src="/content/images/screenshots/home_2.jpg" alt="7" />
+            <span><strong>Always something new.</strong> In addition to recent activity, your homepage is updated with the newest band and event photos, as well as information on new bands in your area. </span>
+        </li>
+        <li class="s3sliderImage">
+            <img src="/content/images/screenshots/home_2.jpg" alt="7" />
+            <span><strong>Always something new.</strong> In addition to recent activity, your homepage is updated with the newest band and event photos, as well as information on new bands in your area. </span>
+        </li>
+                  
+        <div class="clear"></div>
+    </ul>
+</div>

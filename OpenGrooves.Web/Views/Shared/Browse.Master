@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/OpenGrooves.Master" %>
+  
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="TitleContent">
+    <asp:ContentPlaceHolder runat="server" ID="TitleContent" />
+</asp:Content>      
+
+<asp:Content ID="Content2" runat="server" ContentPlaceHolderID="MainContent">
+
+    <h1><asp:ContentPlaceHolder runat="server" ID="BrowseTitle" /></h1>
+
+    <div class="browse-buttons">
+        <%: Html.RouteLink("Bands", "Browse", new { action = "nearby" })%> | 
+        <%: Html.RouteLink("Events", "Browse", new { action = "events" })%> | 
+        <%: Html.RouteLink("Alphabetically", "Browse", new { action = "letter" })%> |
+        <%: Html.RouteLink("Newest", "Browse", new { action = "newest" })%> |
+        <%: Html.RouteLink("Genre", "Browse", new { action = "genre", filter = "rock" })%> |
+        <%: Html.RouteLink("Search", "Browse", new { action = "search" })%>
+    </div>
+
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+</asp:Content>
+
+<asp:Content runat="server" ID="HeadContent" ContentPlaceHolderID="HeadContent">
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</asp:Content>
