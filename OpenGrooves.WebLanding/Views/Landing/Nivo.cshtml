@@ -1,0 +1,22 @@
+﻿@using OpenGrooves.Core.Extensions
+
+@Html.ScriptInclude("~/content/nivo/jquery.nivo.slider.pack.js")
+@Html.CssInclude("~/content/nivo/style.css")
+
+<script type="text/javascript">
+    $(function () {
+        $('#slider').nivoSlider();
+    });
+</script>
+
+<div id="slider-wrapper">
+    <div id="slider" class="nivoSlider">
+        <img src="/content/nivo/images/toystory.jpg" alt="" />
+        <a href="http://dev7studios.com"><img src="/content/nivo/images/up.jpg" alt="" title="This is an example of a caption" /></a>
+        <img src="/content/nivo/images/walle.jpg" alt="" />
+        <img src="/content/nivo/images/nemo.jpg" alt="" title="#htmlcaption" />
+    </div>
+    <div id="htmlcaption" class="nivo-html-caption">
+        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+    </div>
+</div>
