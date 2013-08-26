@@ -23,7 +23,7 @@ namespace OpenGrooves.Services.Mapping
 
         private void CacheSave(Location coord)
         {
-            return;
+            
         }
 
         public Location GetLocation(string address)
