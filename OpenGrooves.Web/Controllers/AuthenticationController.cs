@@ -74,7 +74,7 @@ namespace OpenGrooves.Web.Controllers
             {
                 if (Membership.GetUser(model.Username) != null)
                 {
-                    ModelState.AddModelError("UserExists", "This username, " + model.Username + ", is taken. Please try another.");
+                    ModelState.AddModelError("UserExists", String.Format("This username, {0}, is taken. Please try another.", model.Username));
                 }
                 else if (model.Password != model.PasswordConfirm)
                 {
